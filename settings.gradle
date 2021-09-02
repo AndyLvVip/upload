@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'http://artifactory.ucacc.net/artifactory/gradle-plugin'
+            allowInsecureProtocol true
+        }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'upload'
