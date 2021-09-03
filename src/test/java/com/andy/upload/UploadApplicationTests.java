@@ -37,7 +37,7 @@ class UploadApplicationTests {
 	}
 
 	@Test
-	public void restTemplateUploadFail() {
+	public void restTemplateUploadWithInterceptor() {
 		createLargeFile();
 		File file = new File(filePath);
 		assertTrue(file.exists());
