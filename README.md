@@ -2,10 +2,12 @@
 
 ## Run the UploadApplication as a file-upload server
 
-## Run the UT with limited memory (i.e. -Xmx=50m)
+## Run All UTs with limited memory (i.e. -Xmx=30m), the file to be uploaded is 50Mb
 ![](images/img.png)
 ### Run the UT UploadApplicationTests.restTemplateUpload succeed
+#### Upload a 50Mb file without buffered request body
 ### Run the UT UploadApplicationTests.restTemplateUploadWithInterceptor failed
+#### Upload a 50Mb file without buffered request body, but with a BasicAuthenticationInterceptor
 ```java
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at java.util.Arrays.copyOf(Arrays.java:3236)

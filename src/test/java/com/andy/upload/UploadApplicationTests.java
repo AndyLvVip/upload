@@ -53,7 +53,7 @@ class UploadApplicationTests {
 			for (int i = 0; i < 1024; i++) {
 				b[i] = 'a';
 			}
-			int kb = 100 * 1024; // 100M
+			int kb = 50 * 1024; // 50M
 			for (int j = 0; j < kb; j++) {
 				out.write(b);
 			}
